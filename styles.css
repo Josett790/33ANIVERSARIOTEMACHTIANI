@@ -79,32 +79,27 @@ p {
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.image-container img {
-    width: 150%; /* Para que la imagen no se salga del contenedor */
+.image-container {
+    position: absolute; /* Cambié de fixed a absolute */
+    width: 150px; /* Ajustar el tamaño */
     height: auto;
-    display: block;
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
-.left {
-    left: 100%; /* Separación del borde izquierdo */
-    top: 50%;
-    transform: translateY(-100px);
-}
-
-.right {
-    right: 130%; /* Separación del borde derecho */
-    top: 50%;
-    transform: translateY(100px);
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
 @media (max-width: 768px) {
-    /* Ajustes específicos para celulares */
-    .tu-clase {
-        width: 100%;
-        text-align: center;
+    .image-container {
+        width: 100px; /* Reducir tamaño en móviles */
+    }
+
+    .left {
+        left: 10px; /* Menos espacio en móviles */
+        top: 30%;
+    }
+
+    .right {
+        right: 10px;
+        top: 30%;
     }
 }
+
