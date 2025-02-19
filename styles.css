@@ -70,10 +70,15 @@ p {
     opacity: 1;
     transform: translateY(0);
 }
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 .image-container {
-    position: fixed; /* Fijarlas en la pantalla */
-    width: 200%; /* Ajusta el tamaño según sea necesario */
+    position: absolute; /* Fijarlas en la pantalla */
+    width: 100px; /* Ajusta el tamaño según sea necesario */
     height: auto;
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
@@ -81,7 +86,7 @@ p {
 
 .image-container {
     position: absolute; /* Cambié de fixed a absolute */
-    width: 150px; /* Ajustar el tamaño */
+    width: 100px; /* Ajustar el tamaño */
     height: auto;
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
@@ -102,4 +107,24 @@ p {
         top: 30%;
     }
 }
+@media (max-width: 768px) {
+    #contador, #info {
+        width: 90%;
+        font-size: 18px; /* Ajustar el tamaño del texto */
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
 
