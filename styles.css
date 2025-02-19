@@ -73,7 +73,7 @@ p {
 
 .image-container {
     position: fixed; /* Fijarlas en la pantalla */
-    width: 200px; /* Ajusta el tamaño según sea necesario */
+    width: 200%; /* Ajusta el tamaño según sea necesario */
     height: auto;
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
@@ -86,13 +86,13 @@ p {
 }
 
 .left {
-    left: 100px; /* Separación del borde izquierdo */
+    left: 100%; /* Separación del borde izquierdo */
     top: 50%;
     transform: translateY(-100px);
 }
 
 .right {
-    right: 130px; /* Separación del borde derecho */
+    right: 130%; /* Separación del borde derecho */
     top: 50%;
     transform: translateY(100px);
 }
