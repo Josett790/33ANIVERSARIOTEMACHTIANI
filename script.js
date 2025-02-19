@@ -34,9 +34,3 @@ window.addEventListener("scroll", function () {
         infoSection.classList.add("show");
     }
 });
-
-window.onload = function () {
-    document.querySelector(".left").classList.add("show");
-    document.querySelector(".right").classList.add("show");
-};
-
